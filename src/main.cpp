@@ -1,8 +1,8 @@
 ﻿// Copyright 2021 GHA Test Team
-#include "textgen.h"
-
 #include <iostream>
 #include <string>
+
+#include "textgen.h"
 
 int main() {
     std::string input = "frost.txt";
