@@ -1,3 +1,4 @@
+// Copyright 2026 UNN-IASR
 #ifndef INCLUDE_TEXTGEN_H_
 #define INCLUDE_TEXTGEN_H_
 

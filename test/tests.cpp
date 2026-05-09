@@ -1,7 +1,9 @@
 // Copyright 2021 GHA Test Team
 #include "textgen.h"
+
 #include <gtest/gtest.h>
 #include <fstream>
+#include <string>
 
 TEST(MarkovTest, test1) {
     statetab emptyTable;
@@ -22,7 +24,6 @@ TEST(MarkovTest, test2) {
     EXPECT_EQ(table.count(p2), 1);
     EXPECT_EQ(table[p2][0], "test");
     remove("test2.txt");
-
 }
 TEST(MarkovTest, test3) {
     statetab table;
@@ -38,7 +39,6 @@ TEST(MarkovTest, test3) {
     EXPECT_EQ(table[p3].size(), 1);
     EXPECT_EQ(table[p2][0], "b");
     EXPECT_EQ(table[p2][1], "d");
-   
     remove("test3.txt");
 }
 
