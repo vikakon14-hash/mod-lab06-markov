@@ -1,4 +1,4 @@
-// Copyright 2026 UNN-IASR
+// Copyright 2021 GHA Test Team
 #include "textgen.h"
 
 #include <fstream>
