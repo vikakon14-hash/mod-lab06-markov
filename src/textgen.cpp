@@ -1,5 +1,6 @@
 // Copyright 2026 UNN-IASR
 #include "textgen.h"
+
 #include <fstream>
 #include <random>
 #include <sstream>
@@ -20,8 +21,7 @@ void buildTable(const std::string& filename, statetab& table) {
     }
     file.close();
     if (words.size() < static_cast<size_t>(NPREF + 1)) {
-        throw std::runtime_error("Your file is too small: "
-            << "the minimum number of words - " + std::to_string(NPREF + 1));
+        throw std::runtime_error("Your file is too small");
     }
     prefix currentPrefix;
     for (int i = 0; i < NPREF; i++) {
