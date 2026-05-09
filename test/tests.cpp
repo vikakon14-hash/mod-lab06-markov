@@ -2,9 +2,8 @@
 #include "textgen.h"
 
 #include <fstream>
-#include <string>
-
 #include <gtest/gtest.h>
+#include <string>
 
 TEST(MarkovTest, test1) {
     statetab emptyTable;
